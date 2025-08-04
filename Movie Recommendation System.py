@@ -1,16 +1,3 @@
-"""
-Movie Recommendation System using Content-Based Filtering with Loop Input
-
-- Uses cosine similarity to recommend similar movies based on genres.
-- Runs in a loop to accept multiple user inputs.
-- Exits when user types 'quit' or 'exit'.
-
-Libraries:
-- pandas
-- sklearn
-- seaborn, matplotlib (optional for visualization)
-"""
-
 import pandas as pd
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.preprocessing import MultiLabelBinarizer
@@ -87,3 +74,4 @@ while True:
         break
     recommend_movies(user_input)
     print()  # for spacing
+
